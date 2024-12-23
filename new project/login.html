@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
+    integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+
+    .navigation {
+      height: 50px;
+      width: 100%;
+      background-color: #54978a;
+      position: fixed;
+      top: 0%;
+      z-index: 2;
+    }
+
+    .navigation p {
+      color: white;
+      font-size: 20px;
+      padding-top: 12px;
+      padding-left: 400px;
+    }
+
+    .navigation1 {
+      height: 100px;
+      width: 100%;
+      display: flex;
+      margin-top: 10px;
+      position: fixed;
+      top: 5%;
+      z-index: 2;
+      background-color: white;
+    }
+
+    .navigation1 .IMG img {
+      width: 400px;
+      display: flex;
+      margin-left: 600px;
+      margin-top: 20PX;
+    }
+
+    .navigation1 .ADD {
+      display: flex;
+      justify-content: flex-end;
+      width: 40%;
+    }
+
+    .navigation1 .ADD p {
+      margin-right: 12px;
+      font-size: 20px;
+    }
+
+    .navigation1 .ADD i {
+      font-size: 20px;
+    }
+
+    .color {
+      height: 2px;
+      width: 100%;
+      background-color: black;
+      position: fixed;
+      top: 6%;
+      z-index: 2;
+    }
+
+    .menubar {
+      height: 40px;
+      width: 100%;
+      position: fixed;
+      top: 18%;
+      z-index: 2;
+      background-color: white;
+    }
+
+    .menubar ul {
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    .menubar ul li {
+      list-style: none;
+      padding-left: 30px;
+      font-size: 20PX;
+      color: rgb(80, 78, 78);
+    }
+
+    .menubar ul li i {
+      font-size: 22PX;
+      color: rgb(80, 78, 78);
+    }
+
+    .one .list {
+      display: none;
+      position: absolute;
+      z-index: 2;
+    }
+
+    .one:hover .list {
+
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 250px;
+      background-color: white;
+      justify-content: flex-start;
+      font-family: Nunito, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      margin-left: -309.5px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .list ul {
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      background-color: white;
+    }
+
+    .one .list .dropimg {
+      width: 30%;
+    }
+
+    .one .list .dropimg img {
+      height: 200px;
+      margin: 25px;
+    }
+
+    .two .list1 {
+      display: none;
+      position: absolute;
+      z-index: 2;
+    }
+
+    .two:hover .list1 {
+
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 250px;
+      background-color: white;
+      justify-content: flex-start;
+      font-family: Nunito, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      margin-left: -435px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .list1 ul {
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      background-color: white;
+    }
+
+    .two .list1 .dropimg1 {
+      width: 30%;
+    }
+
+    .two .list1 .dropimg1 img {
+      height: 200px;
+      margin: 25px;
+    }
+
+
+    .three .list2 {
+      display: none;
+      position: absolute;
+      z-index: 2;
+    }
+
+    .three:hover .list2 {
+
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 250px;
+      background-color: white;
+      justify-content: flex-start;
+      font-family: Nunito, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      margin-left: -609.5px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .list2 ul {
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      background-color: white;
+    }
+
+    .three .list2 .dropimg2 {
+      width: 30%;
+    }
+
+    .three .list2 .dropimg2 img {
+      height: 200px;
+      margin: 25px;
+    }
+
+
+
+    .four .list3 {
+      display: none;
+      position: absolute;
+      z-index: 2;
+    }
+
+    .four:hover .list3 {
+
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 250px;
+      background-color: white;
+      justify-content: flex-start;
+      font-family: Nunito, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      margin-left: -1060px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .list3 ul {
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      background-color: white;
+    }
+
+    .four .list3 .dropimg3 {
+      width: 30%;
+    }
+
+    .four .list3 .dropimg3 img {
+      height: 200px;
+      margin: 25px;
+    }
+
+
+
+    .five .list4 {
+      display: none;
+      position: absolute;
+      z-index: 2;
+    }
+
+    .five:hover .list4 {
+
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 250px;
+      background-color: white;
+      justify-content: flex-start;
+      font-family: Nunito, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      margin-left: -1158px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .list4 ul {
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      background-color: white;
+    }
+
+    .five .list4 .dropimg4 {
+      width: 30%;
+    }
+
+    .five .list4 .dropimg4 img {
+      height: 200px;
+      margin: 25px;
+    }
+
+
+    .six .list5 {
+      display: none;
+      position: absolute;
+      z-index: 2;
+    }
+
+    .six:hover .list5 {
+
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 250px;
+      background-color: white;
+      justify-content: flex-start;
+      font-family: Nunito, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      margin-left: -1303px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .list5 ul {
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      background-color: white;
+    }
+
+    .six .list5 .dropimg5 {
+      width: 30%;
+    }
+
+    .six .list5 .dropimg5 img {
+      height: 200px;
+      margin: 25px;
+    }
+
+
+
+
+    .seven .list6 {
+      display: none;
+      position: absolute;
+      z-index: 2;
+    }
+
+    .seven:hover .list6 {
+
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 250px;
+      background-color: white;
+      justify-content: flex-start;
+      font-family: Nunito, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      margin-left: -1434px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .list6 ul {
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      background-color: white;
+    }
+
+    .seven .list6 .dropimg6 {
+      width: 30%;
+    }
+
+    .seven .list6 .dropimg6 img {
+      height: 200px;
+      margin: 25px;
+    }
+
+    .footer {
+      width: 100%;
+      height: 450px;
+      background-color: #447168;
+      color: #212121;
+      margin-top: 30px;
+      display: flex;
+    }
+
+
+    .footer .footer1 {
+      width: 25%;
+      height: 450px;
+    }
+
+    .footer .footer1 .cont {
+      margin-top: 60px;
+    }
+
+    .footer .footer1 img {
+      height: 280px;
+      width: 65%;
+      margin-top: 60px;
+      margin-left: 60px;
+    }
+
+    .footer .footer1 p {
+      margin-left: 95px;
+      margin-top: 30px;
+      line-height: 0%
+    }
+
+    .footer .footer2 {
+      width: 25%;
+      height: 450px;
+    }
+
+    .footer .footer2 ul {
+      margin-top: 80px;
+    }
+
+    .footer .footer2 ul li {
+      list-style: none;
+      font-size: 20px;
+      padding-top: 10px;
+    }
+
+    .footer .footer3 {
+      width: 25%;
+      height: 450px;
+    }
+
+    .footer .footer3 .footer-nav__text {
+      margin-top: 80px;
+      font-size: 20px;
+      text-align: justify;
+      margin-left: 10px;
+    }
+
+    .footer .footer3 .footer-nav__text a {
+      color: #212121;
+    }
+
+    .footer .footer4 {
+      width: 25%;
+      height: 450px;
+    }
+
+    .footer .footer4 .address {
+      margin-top: 80px;
+      margin-left: 65px;
+      font-size: 20px;
+      line-height: 35px;
+    }
+
+    .footer .footer4 .icon {
+      font-size: 22px;
+      margin-left: 65px;
+    }
+
+    .footer .footer4 .icon i {
+      border: 1px solid black;
+      border-radius: 50%;
+      padding: 7px;
+    }
+
+
+
+
+    form {
+      width: 100%;
+      height: 360px;
+      padding: 20px 20px;
+      margin-top: 200px;
+      display: block;
+    }
+
+    form h2 {
+      display: flex;
+      justify-content: center;
+      color: #212121;
+      font-family: Nunito, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    label {
+      padding-top: 10px;
+    }
+
+    input {
+      width: 60%;
+      padding: 15px;
+      outline: 1px solid rgba(63, 62, 62, 0.49);
+      border: none;
+      font-size: 20px;
+    }
+
+    .details {
+      margin-left: 500px;
+    }
+
+    .email {
+      margin-top: 25px;
+    }
+
+    .password {
+      margin-top: 25px;
+    }
+
+    label {
+      font-size: 20px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 13%;
+      padding: 15px 20px;
+      background-color: black;
+      color: white;
+      font-size: 18px;
+      border: none;
+      outline: none;
+    }
+  </style>
+  
+</head>
+
+<body>
+
+
+  <div class="navigation">
+    <p>code EarlyBird10 for 10% OFF orders $100+.........plus FREE LARGE TOTE with orders $200+</p>
+  </div>
+
+  <div class="color"></div>
+
+  <div class="navigation1">
+    <div class="IMG">
+      <img src="image/img1.png">
+    </div>
+    <div class="ADD">
+      <p>LOG IN</p>
+      <p><a href="cart.html" style="text-decoration: none;color: black;">CART</a></p>
+      <i class="ri-search-line"></i>
+    </div>
+  </div>
+
+  <div class="menubar">
+    <ul>
+      <li class="new">NEW!</li>
+      <li class="one">GIFTING<i class="ri-arrow-down-s-line"></i>
+
+        <div class="list" >
+          <ul>
+
+          <li style="font-size: 25px;">
+            Gift Guide 2024
+
+          </li>
+
+          <li style="font-size: 25px;">
+            More Gift Ideas
+
+
+
+          </li>
+
+          <li style="font-size:25px;">
+            Cards
+
+
+
+          </li>
+
+
+          <li style="font-size: 25px;">
+            Corporate and Bulk<br> Gifting
+
+
+
+          </li>
+
+          <li style="font-size: 25px;">
+            Gift Boxes
+
+
+
+          </li>
+
+          <li style="font-size: 25px;">
+            Gift Card / Certificate
+
+
+
+          </li>
+        </ul>
+          <div class="dropimg">
+            <img src="image/img10.jpg">
+          </div>
+          
+        </div>
+
+  </li>
+  <li class="two"> ACCESSORIES<i class="ri-arrow-down-s-line"></i>
+    <div class="list1" >
+      <ul>
+
+      <li style="font-size: 25px;">
+        Winter Accessories
+
+      </li>
+
+      <li style="font-size: 25px;">
+        Socks (Men's and Women's)
+
+
+
+      </li>
+
+      <li style="font-size:25px;">
+        Bags + Wallets
+
+
+
+      </li>
+
+
+      <li style="font-size: 25px;">
+        Hats + Caps (not winter)
+
+
+
+      </li>
+
+      <li style="font-size: 25px;">
+        All Accessories
+
+
+
+      </li>
+
+    </ul>
+      <div class="dropimg1">
+        <img src="image/img10.jpg">
+      </div>
+      
+    </div>
+  </li>
+  <li class="three">HOME<i class="ri-arrow-down-s-line"></i>
+
+
+
+    <div class="list2" >
+      <ul>
+
+      <li style="font-size: 25px;">
+        Candles
+
+      </li>
+
+      <li style="font-size: 25px;">
+        Pottery + Mugs
+
+
+
+      </li>
+
+      <li style="font-size:25px;">
+        Kitchen + Dining
+
+
+
+      </li>
+
+
+      <li style="font-size: 25px;">
+        Barware + Mixers
+
+
+
+      </li>
+
+      <li style="font-size: 25px;">
+        Blankets + Throws
+
+
+
+      </li>
+      
+      <li style="font-size: 25px;">
+        
+        Other Decor
+
+
+      </li>
+      
+      <li style="font-size: 25px;">
+        Blankets + Throws
+
+
+
+      </li>
+      
+      <li style="font-size: 25px;">
+        Frames for Locals
+
+
+
+      </li>
+
+    </ul>
+      <div class="dropimg2">
+        <img src="image/img10.jpg">
+      </div>
+      
+    </div>
+
+  </li>
+  <li class="food"> FOOD </li>
+  <li  class="bath">BATH</li>
+  <li class="kids"> KIDS</li>
+  <li class="JEWELRY"> JEWELRY </li>
+  <li class="four">FUN <i class="ri-arrow-down-s-line"></i>
+  
+    <div class="list3" >
+      <ul>
+
+      <li style="font-size: 25px;">
+        Games
+
+      </li>
+
+      <li style="font-size: 25px;">
+        Puzzles
+
+
+
+      </li>
+
+      <li style="font-size:25px;">
+        Crafts + DIY Kits
+
+
+
+      </li>
+
+
+      <li style="font-size: 25px;">
+        Books
+
+
+
+      </li>
+
+      <li style="font-size: 25px;">
+        Stickers + More
+
+
+
+      </li>
+      
+      
+    </ul>
+      <div class="dropimg3">
+        <img src="image/img10.jpg">
+      </div>
+      
+    </div>
+
+
+  </li>
+  <li class="five"> VERMONT<i class="ri-arrow-down-s-line"></i> 
+
+
+    <div class="list4" >
+      <ul>
+
+      <li style="font-size: 25px;">
+        Souvenirs / Gifts
+
+      </li>
+
+      <li style="font-size: 25px;">
+        Vermont T-Shirts
+
+
+
+      </li>
+
+      <li style="font-size:25px;">
+        Made in Vermont
+
+
+
+      </li>
+
+
+      <li style="font-size: 25px;">
+        Vermont Parks Collection
+
+
+
+      </li>
+
+      
+    </ul>
+      <div class="dropimg4">
+        <img src="image/img10.jpg">
+      </div>
+      
+    </div>
+  </li>
+  <li class="six">OTHERS <i class="ri-arrow-down-s-line"></i>
+  
+    <div class="list5" >
+      <ul>
+
+      <li style="font-size: 25px;">
+        SALE!
+
+      </li>
+
+      <li style="font-size: 25px;">
+        Office / Desk
+
+
+
+      </li>
+
+      <li style="font-size:25px;">
+        Apparel
+
+
+
+      </li>
+
+
+      <li style="font-size: 25px;">
+        Cards
+
+
+
+      </li>
+
+      <li style="font-size: 25px;">
+        Stickers and Magnets
+
+
+
+      </li>
+
+      <li style="font-size: 25px;">
+        Books
+
+
+
+      </li>
+
+
+      
+      
+    </ul>
+      <div class="dropimg5">
+        <img src="image/img10.jpg">
+      </div>
+      
+    </div>
+
+  </li>
+  <li class="seven"> ABOUT<i class="ri-arrow-down-s-line"></i>
+    <div class="list6" >
+      <ul>
+
+      <li style="font-size: 25px;">
+        Our Story
+
+      </li>
+
+      <li style="font-size: 25px;">
+        Contact Us
+
+
+
+      </li>
+
+      <li style="font-size:25px;">
+        Shipping + Delivery
+
+
+
+      </li>
+
+
+      <li style="font-size: 25px;">
+        
+        Maker Inquiry
+
+
+      </li>
+
+      <li style="font-size: 25px;">
+
+        Maker Inquiry
+
+
+      </li>
+
+      <li style="font-size: 25px;">
+        Blog : Deer Diary
+
+
+
+      </li>
+      
+      <li style="font-size: 25px;">
+        PICK UP FAQ's
+
+
+
+      </li>
+
+
+      <li style="font-size: 25px;">
+        Returns
+
+
+
+      </li>
+
+      
+      
+    </ul>
+      <div class="dropimg6">
+        <img src="image/img10.jpg">
+      </div>
+      
+    </div>
+  
+
+  </li>
+  </ul>
+  </div>
+
+  <form action="" id="signin">
+    <h2>LOGIN</h2>
+    <div class="details">
+      <div class="email">
+        <label>EMAIL</label><br>
+        <input type="email" name="email" id="email">
+      </div>
+
+      <div class="password">
+        <label>PASSWORD</label><br>
+        <input type="password" name="password" id="password">
+      </div>
+
+      <button>SUBMIT</button>
+      <h2 style="margin-top: -30PX; "> <a href="createaccount.html" style="text-decoration: none; color: black;">CREATE
+          ACCOUNT</a></h2>
+
+    </div>
+  </form>
+
+
+  <div class="footer">
+    <div class="footer1">
+      <img src="image/img9.png">
+      <div class="cont">
+        <p>© 2024, Common Deer</p>
+        <p>POS and Ecommerce by Shopify</p>
+      </div>
+    </div>
+    <div class="footer2">
+      <ul>
+
+        <li>About</a></li>
+
+        <li>Contact Us</a></li>
+
+        <li>Exchanges, Shipping, Pickup, etc</a></li>
+
+        <li>New Maker Application</a></li>
+
+        <li>Jobs</a></li>
+
+        <li>Terms &amp; Conditions</a></li>
+
+        <li>Privacy Policy</a></li>
+
+      </ul>
+    </div>
+    <div class="footer3">
+      <div class="footer-nav__text rte">
+        <p>Our woman-owned small business and the family of makers we support rely on people like you to stay afloat.
+        </p>
+        <p>Thank you for celebrating American Made with us. </p>
+        <p></p>
+        <p><a href="/pages/delivery-shipping-and-returns-during-covid-19"
+            title="Store Hours, Shipping, Returns, etc">our current "open" hours</a></p>
+      </div>
+    </div>
+    <div class="footer4">
+      <p class="address">
+        210 College Street, Suite 101<br>
+        Burlington, VT Vermont<br>
+        05401 United States
+      </p>
+      <div class="icon">
+        <i class="ri-facebook-line"></i>
+        <i class="ri-instagram-line"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="login.js"></script>
+
+  <script src="index.js"></script>
+
+
+
+
+
+  <script>
+
+
+    // Sign-In 
+
+    let signin = document.querySelector('#signin')
+    let loginarr = JSON.parse(localStorage.getItem("login_data")) || [];
+
+    function loginData() {
+
+      signin.addEventListener("submit", (e) => {
+
+        e.preventDefault()
+
+        let email = document.getElementById('email').value;
+        let password = document.getElementById('password').value;
+
+        let login_detials = {
+          email: email,
+          password: password
+        }
+        // console.log(login_detials)
+
+        loginarr.push(login_detials)
+
+        localStorage.setItem("login_data", JSON.stringify(loginarr))
+
+
+        checkLogin()
+        document.getElementById('email').value = "";
+        document.getElementById('password').value = "";
+
+      })
+    }
+
+    loginData()
+
+
+
+
+  </script>
+</body>
+
+</html>
+
+
+
+
